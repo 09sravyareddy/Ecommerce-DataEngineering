@@ -2,21 +2,28 @@ Here is a comprehensive, production-ready README.md file for your Microsoft Fabr
 
 
 [ ADLS Gen2 / OneLake ] (External Raw Parquet)
+
             │
             ▼
+            
 ┌───────────────────────────────┐
 │         Bronze Layer          │  <- Append-only raw delta tables
+
 └───────────────────────────────┘
             │
             ▼
+            
 ┌───────────────────────────────┐
 │         Silver Layer          │  <- Standardized, cleaned, and deduplicated data
 └───────────────────────────────┘
+
             │
             ▼
+            
 ┌───────────────────────────────┐
 │          Gold Layer           │  <- Consolidated "Customer 360" business view
 └───────────────────────────────┘
+
 
 Bronze (Raw Lakehouse Tables): Direct delta format copies of the original Parquet source files.
 
