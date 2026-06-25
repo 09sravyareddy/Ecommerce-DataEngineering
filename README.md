@@ -1,4 +1,6 @@
 Here is a comprehensive, production-ready README.md file for your Microsoft Fabric Medallion Architecture pipeline. It outlines exactly what the notebook does, how the lakehouse layers are structured, and how to execute it.E-Commerce Medallion Pipeline in Microsoft FabricThis repository contains a PySpark data engineering pipeline implemented within Microsoft Fabric. The pipeline extracts raw e-commerce data hosted in an Azure Data Lake Storage (ADLS) Gen2 account, loads it into a Fabric Lakehouse, cleans and standardizes the data, and builds a consolidated Customer 360 view using the Medallion Architecture (Bronze $\rightarrow$ Silver $\rightarrow$ Gold).🏗️ Architecture OverviewThe pipeline utilizes a multi-layer Medallion architecture to transition data from an unstructured/raw state to a business-ready analytical product:
+
+
 [ ADLS Gen2 / OneLake ] (External Raw Parquet)
             │
             ▼
